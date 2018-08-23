@@ -1,0 +1,9 @@
+server:
+  port: 8050
+
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/lelodois/twitter-client-conf
