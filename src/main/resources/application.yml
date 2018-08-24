@@ -7,3 +7,15 @@ spring:
       server:
         git:
           uri: https://github.com/lelodois/twitter-client-conf
+
+eureka:
+  instance:
+    hostname: localhost
+    port: 8051
+  client:
+    registerWithEureka: true
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${eureka.instance.port}/eureka/
+  server:
+    wait-time-in-ms-when-sync-empty: 3000

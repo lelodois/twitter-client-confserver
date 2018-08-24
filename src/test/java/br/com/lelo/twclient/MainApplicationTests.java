@@ -1,4 +1,4 @@
-package br.com.lelo.springcloud.myconfig;
+package br.com.lelo.twclient;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -7,7 +7,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class MyConfigApplicationTests {
+public class MainApplicationTests {
 
 	@Test
 	public void contextLoads() {

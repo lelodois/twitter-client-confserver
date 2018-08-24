@@ -1,15 +1,17 @@
-package br.com.lelo.springcloud.myconfig;
+package br.com.lelo.twclient;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.config.server.EnableConfigServer;
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
 @SpringBootApplication
 @EnableConfigServer
-public class MyConfigApplication {
+@EnableEurekaClient
+public class MainApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(MyConfigApplication.class, args);
+        SpringApplication.run(MainApplication.class, args);
     }
 
 }
